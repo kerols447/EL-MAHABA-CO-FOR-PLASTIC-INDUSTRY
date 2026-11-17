@@ -3,38 +3,38 @@
    Loaded AFTER the Tailwind CDN script on every page:
    <script src="https://cdn.tailwindcss.com"></script>
    <script src="assets/js/tailwind.config.js"></script>
-   Design language: warm cream paper + deep botanical green +
-   sage panels (export-catalogue look), pill buttons, flat cards.
+   Design language: the site's original brand — soft gray paper +
+   deep industrial blue + vivid orange CTAs, on the reference layout.
    ============================================================ */
 tailwind.config = {
   theme: {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#285B3A',   // deep green — headings, buttons, links
-          50:  '#EEF3EA',
-          100: '#DDE8D5',
-          200: '#C6D8BC',
-          600: '#285B3A',
-          700: '#1E4630',
-          800: '#163524'
+          DEFAULT: '#0B3C7A',   // deep blue — headings, buttons, links
+          50:  '#EEF4FB',
+          100: '#D8E6F5',
+          200: '#B0CCE9',
+          600: '#0B3C7A',
+          700: '#092F61',
+          800: '#071F3F'
         },
-        navy:    '#1E4630',     // deep green ink (legacy token name)
+        navy:    '#071F3F',     // dark navy (legacy token name)
         accent: {
-          DEFAULT: '#285B3A',   // solid CTA green
-          50:  '#EEF3EA',
-          100: '#DDE8D5',
-          600: '#1E4630',
-          700: '#163524'
+          DEFAULT: '#FF7A1A',   // vivid orange — solid CTAs
+          50:  '#FFF3E8',
+          100: '#FFE3CC',
+          600: '#F26A05',
+          700: '#D65E04'
         },
-        cream:   '#F7F5EF',     // page paper
-        creamdeep: '#F4EFE3',   // alternate band
-        sage:    '#DDE8D5',     // tinted panels
-        sagelight: '#E9F0E4',   // lighter band
-        peach:   '#F6E3D3',     // warm promo band
-        surface: '#F7F5EF',
-        ink:     '#26332B',     // body text
-        muted:   '#66756B'      // secondary text (AA on cream)
+        cream:   '#F4F6F9',     // page paper (soft gray)
+        creamdeep: '#EEF4FB',   // alternate band
+        sage:    '#EEF4FB',     // tinted panels
+        sagelight: '#F0F5FA',   // lighter band
+        peach:   '#FFF3E8',     // warm promo band
+        surface: '#F4F6F9',
+        ink:     '#1F2937',     // body text
+        muted:   '#5B6472'      // secondary text (AA on white)
       },
       fontFamily: {
         cairo: ['IBM Plex Sans Arabic', 'Tahoma', 'sans-serif'],
@@ -43,9 +43,9 @@ tailwind.config = {
       },
       maxWidth: { content: '1200px' },
       boxShadow: {
-        card: '0 1px 2px rgba(38, 51, 43, 0.04), 0 10px 28px -12px rgba(38, 51, 43, 0.10)',
-        lift: '0 2px 4px rgba(38, 51, 43, 0.05), 0 18px 40px -14px rgba(38, 51, 43, 0.16)',
-        header: '0 2px 16px -6px rgba(38, 51, 43, 0.10)'
+        card: '0 4px 20px -4px rgba(7, 31, 63, 0.08)',
+        lift: '0 14px 34px -10px rgba(7, 31, 63, 0.18)',
+        header: '0 2px 16px -6px rgba(7, 31, 63, 0.12)'
       },
       transitionTimingFunction: { smooth: 'cubic-bezier(0.22, 1, 0.36, 1)' }
     }

@@ -13,7 +13,17 @@ window.I18N = {
     /* --- Brand --- */
     'brand.name': 'المحبة بلاست',
     'brand.tagline': 'لصناعات البلاستيك',
-    'brand.nameEn': 'Al Mahabba Plast',
+    'brand.nameEn': 'EL MAHABA CO FOR PLASTIC INDUSTRY',
+
+    /* --- Home credibility strip labels --- */
+    'cred.label1': 'التصنيع',
+    'cred.label2': 'الخامات',
+    'cred.label3': 'الألوان الخاصة',
+    'cred.label4': 'الخبرة',
+    'markets.note': 'نرحّب بالمصانع والمستوردين في جميع الأسواق.',
+    'home.promo.kicker': 'ألوان خاصة وتعبئة حسب الطلب',
+    'home.promo.title': 'لونك الخاص.. بعلامتك أنت',
+    'home.promo.d': 'نطابق أي لون لعينتك ونعبّئ الماستر باتش حسب احتياج مصنعك — جاهز للإنتاج خلال ⁦24‑48⁩ ساعة.',
 
     /* --- Navigation --- */
     'nav.home': 'الرئيسية',
@@ -29,6 +39,7 @@ window.I18N = {
     'cta.orderColorNow': 'اطلب لونك الآن',
     'cta.whatsapp': 'تواصل عبر واتساب',
     'cta.more': 'المزيد',
+    'cta.viewAll': 'عرض كل المنتجات',
     'cta.callUs': 'اتصل بنا الآن',
     'cta.send': 'إرسال الطلب',
     'cta.sending': 'جارٍ الإرسال…',
@@ -45,9 +56,9 @@ window.I18N = {
     'a11y.crumb': 'مسار التنقل',
 
     /* --- Contact details (shared) --- */
-    'contact.address': 'العاشر من رمضان، مصر',
+    'contact.address': 'العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر',
     'contact.phone1Label': 'هاتف',
-    'contact.phone2Label': 'هاتف / استفسارات',
+    'contact.phone2Label': 'فاكس',
     'contact.emailLabel': 'البريد الإلكتروني',
     'contact.whatsappLabel': 'واتساب',
     'contact.hours': 'نخدم عملاءنا في جميع محافظات مصر والدول العربية والأوروبية',
@@ -60,7 +71,7 @@ window.I18N = {
     'footer.rights': 'جميع الحقوق محفوظة.',
     'footer.privacy': 'سياسة الخصوصية',
     'footer.terms': 'الشروط والأحكام',
-    'footer.management': 'إدارة: أ. نور حمام',
+    'footer.management': 'إدارة: كيرلس سميح',
     'footer.followUs': 'تابعنا',
     'footer.pill1': 'مجموعة صناعية منذ 1980',
     'footer.pill2': 'مطابقة لونية خلال ⁦24‑48⁩ ساعة',
@@ -86,6 +97,8 @@ window.I18N = {
     'form.delivery': 'مكان التسليم',
     'form.notes': 'ملاحظات',
     'form.image': 'صورة العينة أو اللون (اختياري)',
+    'form.imageBtn': 'اختر صورة العينة',
+    'form.imageNone': 'لم تُختر صورة بعد',
     'form.optional': 'اختياري',
     'form.required': 'حقل مطلوب',
     'form.err.required': 'من فضلك أكمل هذا الحقل.',
@@ -145,6 +158,8 @@ window.I18N = {
 
     'home.why.kicker': 'لماذا نحن',
     'home.why.title': 'شريك يصنع لصالح مصانعكم',
+    'home.why.certLead': 'التزامنا:',
+    'home.quality.imgAlt': 'شهادة تقدير مجموعة المحبة للصناعات البلاستيكية',
     'why.1': 'معايير مخصصة لاستيراد الخامات الخام',
     'why.1.d': 'معايير جودة محددة مسبقاً لكل شحنة نستوردها.',
     'why.2': 'منتجات عالية الجودة بتكلفة منخفضة',
@@ -161,7 +176,7 @@ window.I18N = {
     'home.about.kicker': 'من نحن',
     'home.about.title': 'المحبة بلاست — صناعة تثق فيها المصانع',
     'home.about.p1': 'شركة مصرية متخصصة في تصنيع الماستر باتش بجميع أنواعه واستيراد وتجارة خامات البلاستيك، بمعايير جودة دقيقة في كل خطوة.',
-    'home.about.p2': 'بإدارة أ. نور حمام، نخدم عملاءنا في مصر والدول العربية والأوروبية.',
+    'home.about.p2': 'بإدارة كيرلس سميح، نخدم عملاءنا في مصر والدول العربية والأوروبية.',
     'home.about.link': 'تعرّف علينا أكثر',
     'home.about.imgAlt': 'بوستر مجموعة المحبة للصناعات البلاستيكية منذ 1980 — خامات EVA وPVC وPCU المتاحة',
     'home.stat1': 'المجموعة منذ',
@@ -193,6 +208,7 @@ window.I18N = {
     'markets.eu.d': 'شراكات تجارية مع أسواق أوروبا.',
 
     'home.cta.title': 'ابدأ مشروعك معنا اليوم',
+    'home.cta.kicker': 'ابدأ الآن',
     'home.cta.subtitle': 'ماستر باتش بلون قياسي، لون خاص، أو خامات مستوردة — فريقنا جاهز للرد.',
 
     /* ==================== PRODUCTS — products.html ==================== */
@@ -258,7 +274,7 @@ window.I18N = {
 
     /* ==================== ABOUT — about.html ==================== */
     'page.about.title': 'من نحن | المحبة بلاست — رواد الماستر باتش وخامات البلاستيك',
-    'page.about.desc': 'تعرّف على المحبة بلاست: شركة مصرية لتصنيع الماستر باتش بجميع أنواعه واستيراد وتجارة خامات البلاستيك، بإدارة نور حمام وخدمة تمتد لمصر والدول العربية والأوروبية.',
+    'page.about.desc': 'تعرّف على المحبة بلاست: شركة مصرية لتصنيع الماستر باتش بجميع أنواعه واستيراد وتجارة خامات البلاستيك، بإدارة كيرلس سميح وخدمة تمتد لمصر والدول العربية والأوروبية.',
     'about.hero.kicker': 'من نحن',
     'about.hero.title': 'شركة تبني الثقة لوناً بلون وخامة بخامة',
     'about.hero.subtitle': 'تصنيع ماستر باتش وتجارة خامات البلاستيك — جودة نتحمل مسؤوليتها وموعد نلتزم به.',
@@ -279,7 +295,7 @@ window.I18N = {
     'value.speed.d': 'موعد التسليم التزام تشغيلي، لا وعد تسويقي.',
     'about.mgmt.title': 'كلمة الإدارة',
     'about.mgmt.quote': 'نتعامل مع كل لون وكل خامة على أنها اسمنا في سوق العميل. مهمتنا أن يعود المصنع إلينا في طلبه التالي واثقاً أن النتيجة كما اعتمدها.',
-    'about.mgmt.name': 'نور حمام',
+    'about.mgmt.name': 'كيرلس سميح',
     'about.mgmt.role': 'إدارة الشركة',
     'about.img.factoryAlt': 'بوستر مجموعة المحبة للصناعات البلاستيكية منذ 1980 — خامات EVA وPVC وPCU المتاحة',
     'about.img.appAlt': 'منتجات بلاستيكية نهائية بألوان مركزة — صورة توضيحية لتطبيقات الخامات',
@@ -307,15 +323,16 @@ window.I18N = {
 
     /* ==================== CONTACT — contact.html ==================== */
     'page.contact.title': 'اتصل بنا | المحبة بلاست — اطلب عرض سعرك',
-    'page.contact.desc': 'تواصل مع المحبة بلاست: اطلب عرض سعر للماستر باتش أو ألوان PET أو خامات البلاستيك. هاتف واتساب وبريد إلكتروني، والعاشر من رمضان، مصر.',
+    'page.contact.desc': 'تواصل مع المحبة بلاست: اطلب عرض سعر للماستر باتش أو ألوان PET أو خامات البلاستيك. هاتف واتساب وبريد إلكتروني، والعاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر.',
     'contact.hero.kicker': 'اتصل بنا',
     'contact.hero.title': 'جاهزون لطلبكم — عرض سعر أو استفسار فني',
     'contact.hero.subtitle': 'املأ نموذج عرض السعر أو اتصل بنا مباشرة — هاتف وواتساب.',
     'contact.quote.title': 'اطلب عرض سعر',
     'contact.quote.subtitle': 'تفاصيل أدق عن اللون والخامة والكمية = عرض سعر أدق وأسرع.',
     'contact.info.title': 'بيانات التواصل',
-    'contact.map.title': 'موقعنا: العاشر من رمضان، مصر',
+    'contact.map.title': 'موقعنا: العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO',
     'contact.map.note': 'للزيارة أو المعاينة، تواصل معنا هاتفياً أو عبر واتساب لتحديد الموعد.',
+    'contact.map.open': 'افتح الموقع في خرائط جوجل',
     'contact.call.title': 'تفضّل المكالمة؟',
     'contact.call.subtitle': 'اتصل بنا مباشرة وسنحوّلك للفريق المختص.',
 
@@ -328,7 +345,7 @@ window.I18N = {
     'privacy.subtitle': 'كيف نجمع بياناتك ونستخدمها ونحميها عند تواصلك مع المحبة بلاست.',
     'privacy.intro': 'تحترم المحبة بلاست خصوصيتك. توضّح هذه السياسة أنواع البيانات التي نجمعها عبر هذا الموقع وقنوات التواصل، وكيف نستخدمها وكيف يمكنك التحكم فيها.',
     'privacy.s1': 'من نحن',
-    'privacy.s1.d': 'المحبة بلاست (لصناعات البلاستيك) — مصنع ماستر باتش ومورّد خامات بلاستيك، مقرها العاشر من رمضان، مصر. لأي استفسار خاص بالخصوصية راسلنا على: Nourhamam2014@yahoo.com',
+    'privacy.s1.d': 'المحبة بلاست (لصناعات البلاستيك) — مصنع ماستر باتش ومورّد خامات بلاستيك، مقرها العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر. لأي استفسار خاص بالخصوصية راسلنا على: Nourhamam2014@yahoo.com',
     'privacy.s2': 'المعلومات التي نجمعها',
     'privacy.s2.d': 'نجمع ما ترسله إلينا عمدًا فقط: بيانات نموذج طلب عرض السعر (الاسم، الشركة، رقم الهاتف/الواتساب، البريد الإلكتروني، تفاصيل المنتج واللون والخامة والكمية ومكان التسليم والملاحظات، وأي صورة عينة ترفقها اختياريًا)، وكذلك الرسائل التي ترسلها عبر الهاتف أو واتساب أو البريد الإلكتروني.',
     'privacy.s3': 'كيف نستخدم معلوماتك',
@@ -371,7 +388,7 @@ window.I18N = {
     'terms.s8': 'تعديل الشروط',
     'terms.s8.d': 'يحق لنا تحديث هذه الشروط في أي وقت لمواكبة تغييرات في أنشطتنا أو متطلبات قانونية. يسري التعديل من تاريخ نشره على هذه الصفحة، ويُعد استمرارك في استخدام الموقع قبولًا للنسخة المحدَّثة.',
     'terms.s9': 'تواصل معنا',
-    'terms.s9.d': 'لأي استفسار حول هذه الشروط: المحبة بلاست — العاشر من رمضان، مصر — البريد: Nourhamam2014@yahoo.com — هاتف: +20 122 132 8445 / +20 127 488 9660',
+    'terms.s9.d': 'لأي استفسار حول هذه الشروط: المحبة بلاست — العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر — البريد: Nourhamam2014@yahoo.com — هاتف: +20 55 441 3455 — فاكس: +20 55 441 3455',
 
     /* --- 404 extra --- */
     '404.hint': 'تأكد من صحة الرابط، أو تابع من أحد الأزرار التالية.'
@@ -380,9 +397,19 @@ window.I18N = {
   /* ======================== English ======================== */
   en: {
     /* --- Brand --- */
-    'brand.name': 'Al Mahabba Plast',
+    'brand.name': 'Al Mahaba',
     'brand.tagline': 'For Plastic Industries',
-    'brand.nameEn': 'Al Mahabba Plast',
+    'brand.nameEn': 'EL MAHABA CO FOR PLASTIC INDUSTRY',
+
+    /* --- Home credibility strip labels --- */
+    'cred.label1': 'Manufacturing',
+    'cred.label2': 'Raw Materials',
+    'cred.label3': 'Custom Colors',
+    'cred.label4': 'Expertise',
+    'markets.note': 'We welcome factories and importers across all markets.',
+    'home.promo.kicker': 'Custom colors & packing on request',
+    'home.promo.title': 'Your color, under your brand',
+    'home.promo.d': 'We match any color to your sample and pack masterbatch to your specification — production-ready in 24-48 hours.',
 
     /* --- Navigation --- */
     'nav.home': 'Home',
@@ -398,6 +425,7 @@ window.I18N = {
     'cta.orderColorNow': 'Order Your Color Now',
     'cta.whatsapp': 'Chat on WhatsApp',
     'cta.more': 'Learn More',
+    'cta.viewAll': 'View All Products',
     'cta.callUs': 'Call Us Now',
     'cta.send': 'Send Request',
     'cta.sending': 'Sending…',
@@ -410,13 +438,13 @@ window.I18N = {
     'a11y.whatsapp': 'Contact us on WhatsApp',
     'a11y.backTop': 'Back to top',
     'a11y.skip': 'Skip to main content',
-    'a11y.logo': 'Al Mahabba Plast — Home',
+    'a11y.logo': 'Al Mahaba — Home',
     'a11y.crumb': 'Breadcrumb',
 
     /* --- Contact details (shared) --- */
-    'contact.address': '10th of Ramadan City, Egypt',
-    'contact.phone1Label': 'Phone',
-    'contact.phone2Label': 'Phone / Inquiries',
+    'contact.address': '10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt',
+    'contact.phone1Label': 'Tel',
+    'contact.phone2Label': 'Fax',
     'contact.emailLabel': 'Email',
     'contact.whatsappLabel': 'WhatsApp',
     'contact.hours': 'Serving clients across all Egyptian governorates, Arab and European countries',
@@ -429,7 +457,7 @@ window.I18N = {
     'footer.rights': 'All rights reserved.',
     'footer.privacy': 'Privacy Policy',
     'footer.terms': 'Terms & Conditions',
-    'footer.management': 'Management: Nour Hamam',
+    'footer.management': 'Management: Kerols Sameh',
     'footer.followUs': 'Follow Us',
     'footer.pill1': 'Industrial group since 1980',
     'footer.pill2': 'Color matching in 24-48 hours',
@@ -455,6 +483,8 @@ window.I18N = {
     'form.delivery': 'Delivery Location',
     'form.notes': 'Notes',
     'form.image': 'Sample or Color Image (optional)',
+    'form.imageBtn': 'Choose sample image',
+    'form.imageNone': 'No image selected yet',
     'form.optional': 'optional',
     'form.required': 'Required field',
     'form.err.required': 'Please fill in this field.',
@@ -463,13 +493,13 @@ window.I18N = {
     'form.success': 'Your request was sent successfully! We will contact you shortly.',
     'form.error': 'Something went wrong. Please try again or reach us on WhatsApp.',
     'form.fixErrors': 'Please correct the fields highlighted in red.',
-    'form.waTitle.quote': 'Hello, quote request from the Al Mahabba Plast website:',
-    'form.waTitle.color': 'Hello, custom color request from the Al Mahabba Plast website:',
+    'form.waTitle.quote': 'Hello, quote request from the Al Mahaba website:',
+    'form.waTitle.color': 'Hello, custom color request from the Al Mahaba website:',
     'form.waSample': 'I will attach the sample photo in the chat.',
     'form.waReady': 'Your request is ready and WhatsApp has opened — press Send in the chat to deliver it to us.',
 
     /* --- WhatsApp prefilled message --- */
-    'wa.message': 'Hello, I am interested in Al Mahabba Plast products and would like to ask about pricing.',
+    'wa.message': 'Hello, I am interested in Al Mahaba products and would like to ask about pricing.',
 
     /* --- 404 --- */
     '404.title': 'Page Not Found',
@@ -483,7 +513,7 @@ window.I18N = {
     'hero.badge': 'Masterbatch • PET Colors • Plastic Raw Materials',
     'hero.title': 'Pioneers in Masterbatch Manufacturing & Plastic Raw Material Trading',
     'hero.subtitle': 'We manufacture all types of masterbatch and supply plastic raw materials under defined quality standards at a competitive price.',
-    'hero.imgAlt': 'A colorful assortment of Al Mahabba Plast masterbatch pellets',
+    'hero.imgAlt': 'A colorful assortment of Al Mahaba masterbatch pellets',
 
     'hl.masterbatch': 'All types of masterbatch manufacturing',
     'hl.raw': 'Import & trade of all plastic raw materials',
@@ -514,6 +544,8 @@ window.I18N = {
 
     'home.why.kicker': 'Why Us',
     'home.why.title': 'A partner that works for your factory',
+    'home.why.certLead': 'Our commitment:',
+    'home.quality.imgAlt': 'Certificate of appreciation — Al Mahaba plastic industries group',
     'why.1': 'Dedicated standards for raw material import',
     'why.1.d': 'Pre-defined quality standards for every shipment we import.',
     'why.2': 'High quality at low cost',
@@ -528,9 +560,9 @@ window.I18N = {
     'why.6.d': 'The Al Mahaba group’s expertise since 1980, with factory relations across Egypt, the Arab world and Europe.',
 
     'home.about.kicker': 'About Us',
-    'home.about.title': 'Al Mahabba Plast — manufacturing factories trust',
+    'home.about.title': 'Al Mahaba — the manufacturer factories trust',
     'home.about.p1': 'An Egyptian company specialized in manufacturing all types of masterbatch and importing and trading plastic raw materials, with strict quality standards at every step.',
-    'home.about.p2': 'Managed by Mr. Nour Hamam, serving clients across Egypt, the Arab world and Europe.',
+    'home.about.p2': 'Managed by Kerols Sameh, serving clients across Egypt, the Arab world and Europe.',
     'home.about.link': 'Learn more about us',
     'home.about.imgAlt': 'Al Mahaba for Plastic Industries poster since 1980 — available EVA, PVC and PCU materials',
     'home.stat1': 'Group since',
@@ -562,11 +594,12 @@ window.I18N = {
     'markets.eu.d': 'Commercial partnerships with European markets.',
 
     'home.cta.title': 'Start your project with us today',
+    'home.cta.kicker': 'Get started',
     'home.cta.subtitle': 'Standard-color masterbatch, a custom color, or imported raw materials — our team is ready to answer.',
 
     /* ==================== PRODUCTS — products.html ==================== */
-    'page.products.title': 'Our Products | Al Mahabba Plast — Masterbatch, PET Colors & Raw Materials',
-    'page.products.desc': 'Explore all types of masterbatch, PET colors in every grade, and imported plastic raw materials selected under defined quality standards by Al Mahabba Plast.',
+    'page.products.title': 'Our Products | Al Mahaba — Masterbatch, PET Colors & Raw Materials',
+    'page.products.desc': 'Explore all types of masterbatch, PET colors in every grade, and imported plastic raw materials selected under defined quality standards by Al Mahaba.',
     'products.hero.kicker': 'Our Products',
     'products.hero.title': 'Everything your production line needs — color and material',
     'products.hero.subtitle': 'Three families we manufacture and import with care: masterbatch, PET colors, and plastic raw materials.',
@@ -586,8 +619,8 @@ window.I18N = {
     'detail.row.lead': 'Lead time',
     'detail.row.packaging': 'Packaging',
     'detail.row.minqty': 'Minimum order',
-    'detail.origin.made': 'Manufactured by Al Mahabba Plast — Egypt',
-    'detail.origin.imported': 'Imported to Al Mahabba Plast standards',
+    'detail.origin.made': 'Manufactured by Al Mahaba — Egypt',
+    'detail.origin.imported': 'Imported to Al Mahaba standards',
     'detail.form.v': 'Plastic granules',
     'detail.lead.v': '24-48 hours after sample approval',
     'detail.packaging.v': 'Per request',
@@ -602,8 +635,8 @@ window.I18N = {
     'detail.related': 'More products',
 
     /* ==================== CUSTOM COLORS — custom-colors.html ==================== */
-    'page.colors.title': 'Custom Colors | Al Mahabba Plast — Any Color in ⁦24‑48⁩ Hours',
-    'page.colors.desc': 'Send a sample or color code and we develop, match, approve with you and produce it within ⁦24‑48⁩ hours. Order your custom color now from Al Mahabba Plast.',
+    'page.colors.title': 'Custom Colors | Al Mahaba — Any Color in ⁦24‑48⁩ Hours',
+    'page.colors.desc': 'Send a sample or color code and we develop, match, approve with you and produce it within ⁦24‑48⁩ hours. Order your custom color now from Al Mahaba.',
     'colors.hero.kicker': 'Custom Colors',
     'colors.hero.title': 'Any color you request… produced within ⁦24‑48⁩ hours',
     'colors.hero.subtitle': 'From sending the sample to delivery — our development team works on your color step by step.',
@@ -626,13 +659,13 @@ window.I18N = {
     'colors.img.labAlt': 'Color-matching lab with masterbatch samples — illustrative image',
 
     /* ==================== ABOUT — about.html ==================== */
-    'page.about.title': 'About Us | Al Mahabba Plast — Masterbatch & Raw Materials Pioneers',
-    'page.about.desc': 'Get to know Al Mahabba Plast: an Egyptian company manufacturing all types of masterbatch and trading all plastic raw materials, managed by Nour Hamam, serving Egypt, Arab and European markets.',
+    'page.about.title': 'About Us | Al Mahaba — Masterbatch & Raw Materials Pioneers',
+    'page.about.desc': 'Get to know Al Mahaba: an Egyptian company manufacturing all types of masterbatch and trading all plastic raw materials, managed by Kerols Sameh, serving Egypt, Arab and European markets.',
     'about.hero.kicker': 'About Us',
     'about.hero.title': 'Building trust color by color, material by material',
     'about.hero.subtitle': 'Masterbatch manufacturing and plastic raw material trading — quality we take responsibility for, deadlines we keep.',
     'about.story.title': 'Our Story',
-    'about.story.p1': 'Al Mahabba Plast carries the Al Mahaba group’s expertise since 1980, and started with a clear vision: a color partner that guarantees the result on the production line, not just sells a color.',
+    'about.story.p1': 'Al Mahaba carries the Al Mahaba group’s expertise since 1980, and started with a clear vision: a color partner that guarantees the result on the production line, not just sells a color.',
     'about.story.p2': 'Beyond manufacturing, we import and trade plastic raw materials under dedicated standards — high quality at a competitive cost.',
     'about.story.p3': 'We serve clients across Egypt, the Arab world and Europe through long-term relationships.',
     'about.vision.title': 'Our Vision',
@@ -648,14 +681,14 @@ window.I18N = {
     'value.speed.d': 'Our delivery date is an operational commitment, not a marketing slogan.',
     'about.mgmt.title': 'A Word from Management',
     'about.mgmt.quote': 'We treat every color and every material as our name in our client’s market. Our mission is that the factory comes back for the next order confident the result will be exactly as approved.',
-    'about.mgmt.name': 'Nour Hamam',
+    'about.mgmt.name': 'Kerols Sameh',
     'about.mgmt.role': 'Company Management',
     'about.img.factoryAlt': 'Al Mahaba for Plastic Industries poster since 1980 — available EVA, PVC and PCU materials',
     'about.img.appAlt': 'Finished plastic products in concentrated colors — illustrative image of material applications',
 
     /* ==================== QUALITY — quality.html ==================== */
-    'page.quality.title': 'Quality | Al Mahabba Plast — Our Material & Production Standards',
-    'page.quality.desc': 'Al Mahabba Plast quality commitments: dedicated raw material import standards, production on the finest machinery, precise color matching within ⁦24‑48⁩ hours, high quality at low cost.',
+    'page.quality.title': 'Quality | Al Mahaba — Our Material & Production Standards',
+    'page.quality.desc': 'Al Mahaba quality commitments: dedicated raw material import standards, production on the finest machinery, precise color matching within ⁦24‑48⁩ hours, high quality at low cost.',
     'quality.hero.kicker': 'Quality',
     'quality.hero.title': 'Quality we take responsibility for — no slogans',
     'quality.hero.subtitle': 'Our commitments in material, production and delivery — written exactly as we work.',
@@ -675,29 +708,30 @@ window.I18N = {
     'quality.img.alt': 'Masterbatch production line and pellet converting — illustrative image',
 
     /* ==================== CONTACT — contact.html ==================== */
-    'page.contact.title': 'Contact | Al Mahabba Plast — Request Your Quote',
-    'page.contact.desc': 'Contact Al Mahabba Plast: request a quote for masterbatch, PET colors or plastic raw materials. Phone, WhatsApp and email, based in 10th of Ramadan City, Egypt.',
+    'page.contact.title': 'Contact | Al Mahaba — Request Your Quote',
+    'page.contact.desc': 'Contact Al Mahaba: request a quote for masterbatch, PET colors or plastic raw materials. Phone, WhatsApp and email, based in 10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt.',
     'contact.hero.kicker': 'Contact Us',
     'contact.hero.title': 'Ready for your request — a quote or a technical inquiry',
     'contact.hero.subtitle': 'Fill in the quote form or reach us directly — phone and WhatsApp.',
     'contact.quote.title': 'Request a Quote',
     'contact.quote.subtitle': 'More detail on color, material and quantity = a more accurate, faster quote.',
     'contact.info.title': 'Contact Details',
-    'contact.map.title': 'Our location: 10th of Ramadan City, Egypt',
+    'contact.map.title': 'Our location: 10th of Ramadan City, Industrial Zone A1, Block XIO',
     'contact.map.note': 'For visits or inspections, contact us by phone or WhatsApp to arrange an appointment.',
+    'contact.map.open': 'Open in Google Maps',
     'contact.call.title': 'Prefer to call?',
     'contact.call.subtitle': 'Call us directly and we will route you to the right team.',
 
     /* ==================== PRIVACY — privacy.html ==================== */
-    'page.privacy.title': 'Privacy Policy | Al Mahabba Plast',
-    'page.privacy.desc': 'Al Mahabba Plast privacy policy: how we collect, use and protect quote-request data, and your rights over your personal information.',
+    'page.privacy.title': 'Privacy Policy | Al Mahaba',
+    'page.privacy.desc': 'Al Mahaba privacy policy: how we collect, use and protect quote-request data, and your rights over your personal information.',
     'legal.kicker': 'Legal',
     'legal.updated': 'Last updated: 16 November 2026',
     'privacy.title': 'Privacy Policy',
-    'privacy.subtitle': 'How we collect, use and protect your data when you contact Al Mahabba Plast.',
-    'privacy.intro': 'Al Mahabba Plast respects your privacy. This policy explains what data we collect through this website and our contact channels, how we use it, and the control you have over it.',
+    'privacy.subtitle': 'How we collect, use and protect your data when you contact Al Mahaba.',
+    'privacy.intro': 'Al Mahaba respects your privacy. This policy explains what data we collect through this website and our contact channels, how we use it, and the control you have over it.',
     'privacy.s1': 'Who we are',
-    'privacy.s1.d': 'Al Mahabba Plast for Plastic Industries — a masterbatch manufacturer and plastic raw material supplier based in 10th of Ramadan City, Egypt. For any privacy inquiry, email us at: Nourhamam2014@yahoo.com',
+    'privacy.s1.d': 'Al Mahaba for Plastic Industries — a masterbatch manufacturer and plastic raw material supplier based in 10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt. For any privacy inquiry, email us at: Nourhamam2014@yahoo.com',
     'privacy.s2': 'Information we collect',
     'privacy.s2.d': 'We only collect what you deliberately send us: data from the quote request form (name, company, phone/WhatsApp, email, product, color, material, quantity, delivery location, notes, and any optional sample image you attach), plus messages you send by phone, WhatsApp or email.',
     'privacy.s3': 'How we use your information',
@@ -718,29 +752,29 @@ window.I18N = {
     'privacy.s10.d': 'We may update this privacy policy to reflect changes in our activities or legal requirements. Any update takes effect when posted on this page with a revised last-updated date.',
 
     /* ==================== TERMS — terms.html ==================== */
-    'page.terms.title': 'Terms & Conditions | Al Mahabba Plast',
-    'page.terms.desc': 'Al Mahabba Plast terms and conditions: nature of the site, accuracy of information, quote requests, intellectual property and governing law.',
+    'page.terms.title': 'Terms & Conditions | Al Mahaba',
+    'page.terms.desc': 'Al Mahaba terms and conditions: nature of the site, accuracy of information, quote requests, intellectual property and governing law.',
     'terms.title': 'Terms & Conditions',
-    'terms.subtitle': 'The rules governing use of the Al Mahabba Plast website and quote requests.',
+    'terms.subtitle': 'The rules governing use of the Al Mahaba website and quote requests.',
     'terms.intro': 'By using this website you agree to these terms and conditions. If you do not agree with any part of them, please stop using the site and contact us directly by phone or email.',
     'terms.s1': 'Nature of the website',
-    'terms.s1.d': 'The Al Mahabba Plast website is a B2B informational site. It showcases products and capabilities and lets you submit quote requests; no sale or delivery contract is concluded directly through the website.',
+    'terms.s1.d': 'The Al Mahaba website is a B2B informational site. It showcases products and capabilities and lets you submit quote requests; no sale or delivery contract is concluded directly through the website.',
     'terms.s2': 'Accuracy of information and colors',
     'terms.s2.d': 'We strive to present product information accurately, but published data is indicative and may change with material and specification availability. Colors shown on your screen may differ from the actual pellets due to display settings and material characteristics; the approved physical sample is agreed before production.',
     'terms.s3': 'Quote requests',
     'terms.s3.d': 'Submitting a quote request form is not a binding commitment for either party. Prices depend on specifications, quantities and market conditions at the time of quoting, and an order becomes binding only after our written confirmation of a defined quote and supply scope.',
     'terms.s4': 'Intellectual property',
-    'terms.s4.d': 'All website content — text, designs, images and logos — is owned by Al Mahabba Plast or licensed to it, and may not be copied, republished or modified without prior written permission.',
+    'terms.s4.d': 'All website content — text, designs, images and logos — is owned by Al Mahaba or licensed to it, and may not be copied, republished or modified without prior written permission.',
     'terms.s5': 'External links and resources',
     'terms.s5.d': 'The site may include tools or services provided by third parties (such as Google Maps and web fonts). We do not control their content and are not liable for any damages arising from their use; your use of them follows those parties’ terms.',
     'terms.s6': 'Limitation of liability',
-    'terms.s6.d': 'The website is provided “as is” without warranties regarding availability or freedom from errors. To the extent permitted by law, Al Mahabba Plast is not liable for indirect or consequential damages arising from use of, or temporary inability to access, the website.',
+    'terms.s6.d': 'The website is provided “as is” without warranties regarding availability or freedom from errors. To the extent permitted by law, Al Mahaba is not liable for indirect or consequential damages arising from use of, or temporary inability to access, the website.',
     'terms.s7': 'Governing law',
     'terms.s7.d': 'These terms and conditions are governed by and construed in accordance with the laws of the Arab Republic of Egypt, and the competent courts in Egypt have jurisdiction over any related dispute.',
     'terms.s8': 'Changes to these terms',
     'terms.s8.d': 'We may update these terms to reflect changes in our activities or legal requirements. Changes take effect when posted on this page, and continued use of the site constitutes acceptance of the updated version.',
     'terms.s9': 'Contact us',
-    'terms.s9.d': 'For any question about these terms: Al Mahabba Plast — 10th of Ramadan City, Egypt — Email: Nourhamam2014@yahoo.com — Phone: +20 122 132 8445 / +20 127 488 9660',
+    'terms.s9.d': 'For any question about these terms: EL MAHABA CO FOR PLASTIC INDUSTRY — 10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt — Email: Nourhamam2014@yahoo.com — Tel: +20 55 441 3455 — Fax: +20 55 441 3455',
 
     /* --- 404 extra --- */
     '404.hint': 'Check that the link is correct, or continue from one of the buttons below.'

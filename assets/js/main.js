@@ -25,10 +25,10 @@ const WHATSAPP_NUMBER = '201274889660';
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
 
 const CONTACT_EMAIL = 'Nourhamam2014@yahoo.com';
-const PHONE_1 = '+201221328445';   // displayed: +20 122 132 8445
-const PHONE_2 = '+201274889660';   // displayed: +20 127 488 9660
-const PHONE_1_DISPLAY = '+20 122 132 8445';
-const PHONE_2_DISPLAY = '+20 127 488 9660';
+const PHONE_1 = '+20554413455';   // TEL  displayed: +20 55 441 3455
+const PHONE_2 = '+20554413455';   // FAX  displayed: +20 55 441 3455
+const PHONE_1_DISPLAY = '+20 55 441 3455';
+const PHONE_2_DISPLAY = '+20 55 441 3455';
 
 /* ============================================================
    2) LANGUAGE SYSTEM
@@ -118,19 +118,13 @@ const NAV_ITEMS = [
   { key: 'nav.contact',  href: 'contact.html',       page: 'contact' }
 ];
 
-/* Brand mark: three overlapping "masterbatch pellets".
-   [PLACEHOLDER] Replace this SVG with the real logo file
-   (e.g. <img src="assets/img/logo.png" alt="…">) when available. */
+/* Real company logo lockup (AR / EN), transparent PNG processed from the
+   official artwork. `size` is the rendered height in px; width follows aspect. */
 function logoMark(size) {
-  const s = size || 40;
+  const h = size || 44;
+  const src = currentLang === 'en' ? 'assets/img/logo-en.png' : 'assets/img/logo-ar.png';
   return (
-    '<svg width="' + s + '" height="' + s + '" viewBox="0 0 48 48" aria-hidden="true" focusable="false">' +
-      '<circle cx="18" cy="20" r="13" fill="#1E4630"/>' +
-      '<circle cx="31" cy="17" r="10" fill="#285B3A"/>' +
-      '<circle cx="27" cy="31" r="9" fill="#C6D8BC"/>' +
-      '<circle cx="14" cy="15" r="4" fill="#ffffff" opacity="0.35"/>' +
-      '<circle cx="28" cy="13" r="3" fill="#ffffff" opacity="0.4"/>' +
-    '</svg>'
+    '<img src="' + src + '" alt="' + t('brand.name') + '" height="' + h + '" style="height:' + h + 'px;width:auto" class="block select-none" draggable="false">'
   );
 }
 
@@ -139,7 +133,7 @@ function headerHTML() {
   const links = NAV_ITEMS.map(function (item) {
     const active = item.page === activePage;
     return (
-      '<a href="' + item.href + '" class="nav-link text-[15px] font-semibold text-ink hover:text-primary transition-colors' +
+      '<a href="' + item.href + '" class="nav-link text-[16px] font-normal text-ink hover:text-primary transition-colors' +
       (active ? ' active' : '') + '"' + (active ? ' aria-current="page"' : '') + '>' +
       t(item.key) + '</a>'
     );
@@ -160,13 +154,9 @@ function headerHTML() {
       '<div class="max-w-content mx-auto px-4 sm:px-6">' +
         '<div class="header-inner flex items-center justify-between gap-4">' +
 
-          /* Logo */
-          '<a href="index.html" class="flex items-center gap-3 shrink-0" aria-label="' + t('a11y.logo') + '">' +
-            logoMark(42) +
-            '<span class="leading-tight">' +
-              '<span class="block text-lg font-extrabold text-primary-700">' + t('brand.name') + '</span>' +
-              '<span class="block text-[11px] font-semibold text-muted tracking-wide">' + t('brand.tagline') + '</span>' +
-            '</span>' +
+          /* Logo (real lockup image includes the tagline) */
+          '<a href="index.html" class="flex items-center shrink-0" aria-label="' + t('a11y.logo') + '">' +
+            logoMark(46) +
           '</a>' +
 
           /* Desktop nav */
@@ -223,26 +213,21 @@ function footerHTML() {
   }).join('');
 
   return (
-    '<footer class="bg-creamdeep border-t border-primary-100 text-ink">' +
+    '<footer class="bg-creamdeep border-t border-primary-100 text-ink">' + '<div class="lg:flex">' + '<div class="hidden lg:block relative w-[240px] shrink-0" aria-hidden="true"><img src="assets/img/studio-hero.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy"></div>' + '<div class="flex-1 min-w-0">' +
       '<div class="max-w-content mx-auto px-4 sm:px-6 pt-14 pb-10">' +
 
         /* Top row: brand + intro + quote CTA */
         '<div class="flex flex-col lg:flex-row lg:items-center gap-6 justify-between mb-8">' +
-          '<div class="flex items-center gap-3">' + logoMark(44) +
-            '<span class="leading-tight">' +
-              '<span class="block text-lg font-extrabold text-primary-700">' + t('brand.name') + '</span>' +
-              '<span class="block text-[11px] font-semibold text-muted">' + t('brand.tagline') + '</span>' +
-            '</span>' +
-          '</div>' +
+          '<div class="flex items-center">' + logoMark(50) + '</div>' +
           '<p class="text-sm text-muted leading-relaxed max-w-xl">' + t('footer.desc') + '</p>' +
-          '<a href="contact.html#quote-form" class="btn btn-accent btn-sm shrink-0">' + t('cta.quote') + '</a>' +
+          '<a href="contact.html#quote-form" class="btn btn-accent btn-sm btn-round shrink-0">' + t('cta.quote') + '</a>' +
         '</div>' +
 
         /* Social + trust pills */
         '<div class="flex flex-wrap items-center gap-3 mb-10">' +
           '<a data-wa-link href="' + whatsappLink() + '" target="_blank" rel="noopener" aria-label="' + t('a11y.whatsapp') + '" class="w-9 h-9 rounded-full bg-primary text-white hover:bg-primary-700 flex items-center justify-center transition-colors"><i data-lucide="message-circle" class="w-4 h-4"></i></a>' +
           '<a href="mailto:' + CONTACT_EMAIL + '" aria-label="' + t('contact.emailLabel') + '" class="w-9 h-9 rounded-full bg-primary text-white hover:bg-primary-700 flex items-center justify-center transition-colors"><i data-lucide="mail" class="w-4 h-4"></i></a>' +
-          '<a href="tel:' + PHONE_2 + '" aria-label="' + t('contact.phone2Label') + '" class="w-9 h-9 rounded-full bg-primary text-white hover:bg-primary-700 flex items-center justify-center transition-colors"><i data-lucide="phone" class="w-4 h-4"></i></a>' +
+          '<a href="tel:' + PHONE_1 + '" aria-label="' + t('contact.phone1Label') + '" class="w-9 h-9 rounded-full bg-primary text-white hover:bg-primary-700 flex items-center justify-center transition-colors"><i data-lucide="phone" class="w-4 h-4"></i></a>' +
           '<span class="w-px h-6 bg-primary-100 mx-1 hidden sm:block" aria-hidden="true"></span>' +
           pills +
         '</div>' +
@@ -262,7 +247,7 @@ function footerHTML() {
             '<ul class="space-y-3 text-sm text-muted">' +
               '<li class="flex items-start gap-2.5"><i data-lucide="map-pin" class="w-4 h-4 mt-1.5 text-primary shrink-0"></i><span>' + t('contact.address') + '</span></li>' +
               '<li class="flex items-center gap-2.5"><i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i><a href="tel:' + PHONE_1 + '" class="ltr-inline hover:text-primary transition-colors" dir="ltr">' + PHONE_1_DISPLAY + '</a></li>' +
-              '<li class="flex items-center gap-2.5"><i data-lucide="phone" class="w-4 h-4 text-primary shrink-0"></i><a href="tel:' + PHONE_2 + '" class="ltr-inline hover:text-primary transition-colors" dir="ltr">' + PHONE_2_DISPLAY + '</a></li>' +
+              '<li class="flex items-center gap-2.5"><i data-lucide="printer" class="w-4 h-4 text-primary shrink-0"></i><span class="ltr-inline" dir="ltr">' + PHONE_2_DISPLAY + '</span></li>' +
               '<li class="flex items-center gap-2.5"><i data-lucide="mail" class="w-4 h-4 text-primary shrink-0"></i><a href="mailto:' + CONTACT_EMAIL + '" class="ltr-inline hover:text-primary transition-colors break-all" dir="ltr">' + CONTACT_EMAIL + '</a></li>' +
             '</ul>' +
             '<p class="text-sm font-bold text-primary mt-4">' + t('footer.management') + '</p>' +
@@ -280,7 +265,7 @@ function footerHTML() {
           '</div>' +
         '</div>' +
       '</div>' +
-    '</footer>'
+    '</div></div>' + '</footer>'
   );
 }
 
@@ -585,6 +570,21 @@ function initForms() {
       });
     });
 
+    /* translated file-picker trigger: show chosen file name beside it */
+    const fileField = form.querySelector('input[type="file"]');
+    if (fileField) {
+      const nameEl = document.getElementById(fileField.id + '-name');
+      if (nameEl) fileField.addEventListener('change', function () {
+        if (fileField.files.length) {
+          nameEl.removeAttribute('data-i18n');
+          nameEl.textContent = fileField.files[0].name;
+        } else {
+          nameEl.setAttribute('data-i18n', 'form.imageNone');
+          nameEl.textContent = t('form.imageNone');
+        }
+      });
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
 
@@ -752,16 +752,14 @@ const PRODUCTS = [
   }
 ];
 
-/** Render a catalogue card (reference style: image panel + text, no box). */
+/** Render a catalogue card (reference style: square light image panel,
+    category eyebrow, name, subline, "view product" link — nothing else). */
 function productCard(p, index) {
   const gi = PRODUCTS.indexOf(p);
-  const waMsg = currentLang === 'ar'
-    ? 'مرحباً، أريد عرض سعر لمنتج: ' + p.name.ar
-    : 'Hello, I would like a quote for: ' + p.name.en;
   const href = 'product.html?p=' + gi;
   return (
-    '<article class="cat-card group flex flex-col reveal" data-reveal-delay="' + (index % 4) * 100 + '">' +
-      '<a href="' + href + '" class="cat-img block aspect-[4/3]" tabindex="-1" aria-hidden="true">' +
+    '<article class="cat-card group flex flex-col reveal" data-reveal-delay="' + (index % 5) * 80 + '">' +
+      '<a href="' + href + '" class="cat-img block aspect-square" tabindex="-1" aria-hidden="true">' +
         '<img src="' + p.img + '" alt="' + p.name[currentLang] + '" loading="lazy" decoding="async" ' +
         'class="w-full h-full object-cover" width="1024" height="1024" ' +
         'onerror="this.onerror=null;this.src=\'assets/img/studio-hero.jpg\';">' +
@@ -771,19 +769,27 @@ function productCard(p, index) {
         '<h3 class="text-lg font-extrabold text-primary-700 leading-snug mb-1">' +
           '<a href="' + href + '" class="hover:underline">' + p.name[currentLang] + '</a>' +
         '</h3>' +
-        '<p class="text-muted text-sm leading-relaxed flex-1">' + p.desc[currentLang] + '</p>' +
-        '<div class="mt-3 flex items-center justify-between gap-3">' +
-          '<a href="' + href + '" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all text-sm">' +
-            '<span>' + t('products.view') + '</span>' +
-            '<i data-lucide="arrow-left" class="w-4 h-4 icon-flip"></i>' +
-          '</a>' +
-          '<a href="' + whatsappLink(waMsg) + '" target="_blank" rel="noopener" aria-label="' + t('cta.whatsapp') + ': ' + p.name[currentLang] + '" class="w-9 h-9 rounded-full bg-[#25D366] text-white hover:bg-[#128C7E] flex items-center justify-center transition-colors shrink-0">' +
-            '<i data-lucide="message-circle" class="w-4 h-4"></i>' +
-          '</a>' +
-        '</div>' +
+        '<p class="subline mb-3">' + t('detail.form.v') + '</p>' +
+        '<a href="' + href + '" class="inline-flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all text-sm mt-auto">' +
+          '<span>' + t('products.view') + '</span>' +
+          '<i data-lucide="arrow-right" class="w-4 h-4"></i>' +
+        '</a>' +
       '</div>' +
     '</article>'
   );
+}
+
+/** Homepage portfolio row: all products as catalogue cards. No-op elsewhere. */
+function initHomeProducts() {
+  const mount = document.getElementById('home-products');
+  if (!mount) return;
+  function render() {
+    mount.innerHTML = PRODUCTS.slice(0, 6).map(productCard).join('');
+    refreshIcons();
+    initReveal();
+  }
+  document.addEventListener('mp:langchange', render);
+  render();
 }
 
 /** Products page: tabs + grid. No-op on other pages. */
@@ -927,7 +933,7 @@ function initProductDetail() {
             '<div class="flex flex-wrap gap-2 mb-6">' + services + '</div>' +
             '<p class="text-xs text-muted leading-relaxed mb-8">' + t('detail.note') + '</p>' +
             '<div class="flex flex-wrap gap-4">' +
-              '<a href="contact.html#quote-form" class="btn btn-accent"><i data-lucide="file-text" class="w-5 h-5"></i><span>' + t('cta.quote') + '</span></a>' +
+              '<a href="contact.html#quote-form" class="btn btn-accent"><span>' + t('cta.quote') + '</span><i data-lucide="arrow-right" class="w-4 h-4"></i></a>' +
               '<a href="' + whatsappLink(waMsg) + '" target="_blank" rel="noopener" class="btn btn-outline"><i data-lucide="message-circle" class="w-5 h-5"></i><span>' + t('cta.whatsapp') + '</span></a>' +
             '</div>' +
           '</div>' +
@@ -962,6 +968,7 @@ document.addEventListener('DOMContentLoaded', function () {
   initAccordions();
   initForms();
   initProductGrid();
+  initHomeProducts();
   initProductDetail();
 
   let ticking = false;

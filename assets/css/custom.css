@@ -1,24 +1,26 @@
 /* ============================================================
    المحبة بلاست — custom.css
    Shared component styles that Tailwind CDN cannot express.
-   Design language: cream paper, deep green, sage panels,
-   pill buttons, flat catalogue cards, spec tables, eyebrows.
+   Design language: the site's original brand colors (soft gray paper,
+   deep industrial blue, vivid orange CTAs) on the reference layout.
    ============================================================ */
 
 :root {
-  --c-primary: #285B3A;
-  --c-primary-700: #1E4630;
-  --c-navy: #1E4630;
-  --c-cream: #F7F5EF;
-  --c-cream-deep: #F4EFE3;
-  --c-sage: #DDE8D5;
-  --c-sage-light: #E9F0E4;
-  --c-peach: #F6E3D3;
-  --c-paper: #FCFBF8;
-  --c-hairline: #E5E0D2;
-  --c-ink: #26332B;
-  --c-muted: #66756B;
-  --header-h: 88px;          /* default header height */
+  --c-primary: #0B3C7A;
+  --c-primary-700: #092F61;
+  --c-navy: #071F3F;
+  --c-accent: #FF7A1A;
+  --c-accent-700: #F26A05;
+  --c-cream: #F4F6F9;
+  --c-cream-deep: #EEF4FB;
+  --c-sage: #EEF4FB;
+  --c-sage-light: #F0F5FA;
+  --c-peach: #FFF3E8;
+  --c-paper: #FFFFFF;
+  --c-hairline: #D4DBE5;
+  --c-ink: #1F2937;
+  --c-muted: #5B6472;
+  --header-h: 83px;          /* default header height */
   --header-h-shrunk: 64px;   /* height after scrolling */
 }
 
@@ -51,7 +53,7 @@ html[lang="en"] h1, html[lang="en"] h2, html[lang="en"] h3, html[lang="en"] h4 {
   line-height: 1.25;
 }
 
-::selection { background: var(--c-primary); color: #fff; }
+::selection { background: var(--c-accent); color: #fff; }
 
 /* ---------- Custom scrollbar (brand language) ---------- */
 html { scrollbar-width: thin; scrollbar-color: var(--c-primary) var(--c-cream); }
@@ -104,14 +106,14 @@ html[lang="en"] .eyebrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 14px 30px;
-  border-radius: 9999px;
-  font-weight: 700;
-  font-size: 1rem;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9375rem;
   line-height: 1.4;
   cursor: pointer;
-  border: 1.5px solid transparent;
+  border: 1px solid transparent;
   transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
               box-shadow 0.25s ease, background-color 0.25s ease,
               color 0.25s ease, border-color 0.25s ease;
@@ -120,24 +122,25 @@ html[lang="en"] .eyebrow {
 }
 .btn:hover { transform: translateY(-2px); }
 .btn:active { transform: translateY(0); }
-.btn .lucide { width: 20px; height: 20px; flex-shrink: 0; }
+.btn .lucide { width: 18px; height: 18px; flex-shrink: 0; }
+.btn-round { border-radius: 9999px; }
 
-.btn-accent { background: var(--c-primary); color: #fff; box-shadow: 0 6px 18px -8px rgba(40, 91, 58, 0.5); }
-.btn-accent:hover { background: var(--c-primary-700); }
+.btn-accent { background: var(--c-accent); color: #fff; box-shadow: 0 6px 18px -8px rgba(255, 122, 26, 0.55); }
+.btn-accent:hover { background: var(--c-accent-700); }
 
-.btn-primary { background: var(--c-primary); color: #fff; box-shadow: 0 6px 18px -8px rgba(40, 91, 58, 0.5); }
+.btn-primary { background: var(--c-primary); color: #fff; box-shadow: 0 6px 18px -8px rgba(11, 60, 122, 0.5); }
 .btn-primary:hover { background: var(--c-primary-700); }
 
 .btn-outline { background: transparent; color: var(--c-primary); border-color: var(--c-primary); }
 .btn-outline:hover { background: var(--c-primary); color: #fff; }
 
-.btn-outline-light { background: rgba(255, 255, 255, 0.5); color: var(--c-primary); border-color: rgba(40, 91, 58, 0.45); }
+.btn-outline-light { background: rgba(255, 255, 255, 0.5); color: var(--c-primary); border-color: rgba(11, 60, 122, 0.45); }
 .btn-outline-light:hover { background: var(--c-primary); color: #fff; }
 
 .btn-whatsapp { background: #1FAF57; color: #fff; box-shadow: 0 6px 18px -6px rgba(31, 175, 87, 0.5); }
 .btn-whatsapp:hover { background: #178F47; }
 
-.btn-sm { padding: 10px 22px; font-size: 0.9rem; }
+.btn-sm { padding: 9px 16px; font-size: 0.85rem; }
 
 /* ---------- Cards: flat paper panels, hairline border ---------- */
 .card {
@@ -149,19 +152,45 @@ html[lang="en"] .eyebrow {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 2px 4px rgba(38, 51, 43, 0.05), 0 18px 40px -14px rgba(38, 51, 43, 0.16);
+  box-shadow: 0 2px 4px rgba(7, 31, 63, 0.05), 0 18px 40px -14px rgba(7, 31, 63, 0.16);
   border-color: var(--c-sage);
 }
 
 /* Catalogue card: image panel + text on paper, no box */
 .cat-card { background: transparent; border: 0; box-shadow: none; }
 .cat-card .cat-img {
-  background: var(--c-sage);
-  border-radius: 0.5rem;
+  background: var(--c-sagelight);
+  border-radius: 6px;
   overflow: hidden;
 }
 .cat-card:hover .cat-img img { transform: scale(1.04); }
 .cat-card .cat-img img { transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1); }
+.cat-card .subline { font-size: 0.8125rem; color: var(--c-muted); }
+
+/* ---------- Full-bleed cover hero (reference homepage) ---------- */
+.cover { position: relative; display: flex; align-items: center; min-height: min(600px, 82vh); overflow: hidden; }
+.cover-media { position: absolute; inset: 0; z-index: 0; }
+.cover-media img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; position: relative; z-index: 0; }
+.cover-media::before { content: ''; position: absolute; inset: 0; z-index: 1; }
+html[dir="rtl"] .cover-media img { transform: scaleX(-1); object-position: 38% 50%; }
+html[dir="rtl"] .cover-media::before {
+  background: linear-gradient(to left,
+    rgba(244,246,249,.96) 0%, rgba(244,246,249,.92) 24%, rgba(244,246,249,.72) 38%,
+    rgba(244,246,249,.4) 50%, rgba(244,246,249,.08) 62%, rgba(244,246,249,0) 72%);
+}
+html[dir="ltr"] .cover-media::before {
+  background: linear-gradient(to right,
+    rgba(244,246,249,.96) 0%, rgba(244,246,249,.92) 24%, rgba(244,246,249,.72) 38%,
+    rgba(244,246,249,.4) 50%, rgba(244,246,249,.08) 62%, rgba(244,246,249,0) 72%);
+}
+@media (max-width: 1023px) {
+  .cover { align-items: flex-start; min-height: min(72vh, 600px); padding-top: 112px; padding-bottom: 44px; }
+  html[dir="rtl"] .cover-media::before,
+  html[dir="ltr"] .cover-media::before {
+    background: linear-gradient(180deg,
+      rgba(244,246,249,.96) 0%, rgba(244,246,249,.94) 42%, rgba(244,246,249,.82) 58%, rgba(244,246,249,.45) 76%, rgba(244,246,249,.08) 92%);
+  }
+}
 
 /* ---------- Spec table (product detail) ---------- */
 .spec-table {
@@ -194,7 +223,7 @@ html[lang="en"] .eyebrow {
   align-items: center;
   gap: 6px;
   padding: 6px 14px;
-  border-radius: 9999px;
+  border-radius: 6px;
   border: 1px solid var(--c-hairline);
   background: var(--c-paper);
   color: var(--c-primary-700);
@@ -205,7 +234,7 @@ html[lang="en"] .eyebrow {
 
 /* ---------- Sticky header ---------- */
 #site-header {
-  background: rgba(247, 245, 239, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--c-hairline);
@@ -215,7 +244,7 @@ html[lang="en"] .eyebrow {
   height: var(--header-h);
   transition: height 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
-#site-header.scrolled { box-shadow: 0 2px 16px -6px rgba(38, 51, 43, 0.10); }
+#site-header.scrolled { box-shadow: 0 2px 16px -6px rgba(7, 31, 63, 0.10); }
 #site-header.scrolled .header-inner { height: var(--header-h-shrunk); }
 
 /* Active nav link indicator */
@@ -232,7 +261,7 @@ html[lang="en"] .eyebrow {
   transition: width 0.25s ease;
 }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
-.nav-link.active { color: var(--c-primary); font-weight: 700; }
+.nav-link.active { color: var(--c-primary); font-weight: 600; }
 
 /* RTL: flip directional arrows/icons automatically */
 html[dir="rtl"] .icon-flip { transform: scaleX(-1); }
@@ -284,8 +313,8 @@ html[dir="rtl"] .icon-flip { transform: scaleX(-1); }
 .field::placeholder { color: #9AA3B0; }
 .field:focus {
   outline: none;
-  border-color: var(--c-primary);
-  box-shadow: 0 0 0 4px rgba(40, 91, 58, 0.12);
+  border-color: var(--c-accent);
+  box-shadow: 0 0 0 4px rgba(11, 60, 122, 0.12);
 }
 .field.field-invalid { border-color: #DC2626; box-shadow: 0 0 0 4px rgba(220, 38, 38, 0.1); }
 .field.field-valid   { border-color: #16A34A; }
@@ -317,7 +346,7 @@ html[dir="rtl"] .icon-flip { transform: scaleX(-1); }
   align-items: center;
   justify-content: center;
   color: #fff;
-  box-shadow: 0 8px 24px -6px rgba(38, 51, 43, 0.35);
+  box-shadow: 0 8px 24px -6px rgba(7, 31, 63, 0.35);
   transition: transform 0.25s ease, opacity 0.3s ease, background-color 0.25s ease;
 }
 .float-btn:hover { transform: translateY(-4px) scale(1.05); }
@@ -327,9 +356,9 @@ html[dir="rtl"] .icon-flip { transform: scaleX(-1); }
 
 /* subtle attention pulse, disabled for reduced motion */
 @keyframes wa-pulse {
-  0%   { box-shadow: 0 8px 24px -6px rgba(38,51,43,.35), 0 0 0 0 rgba(31,175,87,.45); }
-  70%  { box-shadow: 0 8px 24px -6px rgba(38,51,43,.35), 0 0 0 16px rgba(31,175,87,0); }
-  100% { box-shadow: 0 8px 24px -6px rgba(38,51,43,.35), 0 0 0 0 rgba(31,175,87,0); }
+  0%   { box-shadow: 0 8px 24px -6px rgba(7,31,63,.35), 0 0 0 0 rgba(31,175,87,.45); }
+  70%  { box-shadow: 0 8px 24px -6px rgba(7,31,63,.35), 0 0 0 16px rgba(31,175,87,0); }
+  100% { box-shadow: 0 8px 24px -6px rgba(7,31,63,.35), 0 0 0 0 rgba(31,175,87,0); }
 }
 #whatsapp-float { animation: wa-pulse 2.6s ease-out infinite; }
 
@@ -351,7 +380,7 @@ html[dir="rtl"] .icon-flip { transform: scaleX(-1); }
 #mobile-menu.open { max-height: 480px; }
 
 /* ---------- Section helpers ---------- */
-.section-pad { padding-top: 96px; padding-bottom: 96px; }
+.section-pad { padding-top: 112px; padding-bottom: 112px; }
 @media (max-width: 767px) {
   .section-pad { padding-top: 64px; padding-bottom: 64px; }
 }
@@ -367,9 +396,101 @@ html[dir="rtl"] .icon-flip { transform: scaleX(-1); }
 
 /* ---------- Subtle pellet-dot texture for tinted surfaces ---------- */
 .dot-grid {
-  background-image: radial-gradient(rgba(40, 91, 58, 0.07) 1px, transparent 1.4px);
+  background-image: radial-gradient(rgba(11, 60, 122, 0.07) 1px, transparent 1.4px);
   background-size: 22px 22px;
 }
+
+/* ---------- Split hero (reference: copy one side, photo other) ---------- */
+.hero-split { display: grid; grid-template-columns: 1fr; background: var(--c-cream); }
+.hero-copy { display: flex; flex-direction: column; justify-content: center; }
+.hero-media { position: relative; min-height: 300px; }
+.hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.hero-title { font-size: clamp(2.25rem, 4.9vw, 3.875rem); font-weight: 600; line-height: 1.08; }
+html[lang="en"] .hero-title { letter-spacing: -0.024em; }
+html[lang="ar"] .hero-title { font-weight: 700; line-height: 1.3; }
+
+/* Section titles: reference scale (42px / 700) */
+.sec-title { font-size: clamp(1.75rem, 3vw, 2.625rem); font-weight: 700; line-height: 1.15; }
+html[lang="en"] .sec-title { letter-spacing: -0.022em; }
+html[lang="ar"] .sec-title { line-height: 1.4; }
+@media (min-width: 1024px) {
+  .hero-split { grid-template-columns: 1fr 1fr; min-height: 560px; }
+  .hero-media { min-height: 560px; }
+}
+
+/* ---------- Credibility strip cell (small-caps label + muted line) ---------- */
+.cred-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--c-primary);
+  letter-spacing: 0.02em;
+}
+html[lang="en"] .cred-label { text-transform: uppercase; letter-spacing: 0.16em; }
+
+/* ---------- Full-bleed photo + copy bands (about / quality / promo) ---------- */
+.about-split, .quality-split, .promo-split { display: grid; grid-template-columns: 1fr; }
+.about-media, .quality-media, .promo-media { position: relative; min-height: 320px; }
+.about-media img, .quality-media img, .promo-media img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+}
+.about-copy, .quality-copy, .promo-copy { display: flex; flex-direction: column; justify-content: center; }
+@media (min-width: 1024px) {
+  .about-split, .quality-split { grid-template-columns: 1fr 1fr; }
+  .about-media, .quality-media { min-height: 520px; }
+  .promo-split { grid-template-columns: 1.15fr 0.85fr; align-items: center; padding: 56px 0; }
+  .promo-media { min-height: 360px; margin-inline-end: 48px; }
+}
+.promo-media { margin: 0 16px 24px; border-radius: 6px; overflow: hidden; }
+
+/* ---------- Numbered connector process (reference supply path) ---------- */
+.steps { position: relative; display: grid; grid-template-columns: 1fr; gap: 2.5rem; }
+.step { position: relative; }
+.step-num {
+  position: relative; z-index: 1;
+  display: block;
+  color: var(--c-muted); font-weight: 700; font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.625rem;
+}
+.step h3 { font-size: 0.9375rem; font-weight: 700; color: var(--c-primary-700); margin-bottom: 0.5rem; }
+html[lang="en"] .step h3 { font-size: 0.8125rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.step p { font-size: 0.8125rem; }
+@media (min-width: 1024px) {
+  .steps { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+  .steps::before {
+    content: ''; position: absolute; top: 3px; inset-inline-start: 4px; inset-inline-end: 4px;
+    height: 2px; background: var(--c-hairline);
+  }
+  .step::before {
+    content: ''; position: absolute; top: 0; inset-inline-start: 0;
+    width: 8px; height: 8px; background: var(--c-primary);
+    transform: rotate(45deg);
+  }
+  .step-num { margin-top: 1.25rem; }
+}
+
+/* ---------- Quality checklist (two columns, square bullets — reference) ---------- */
+.check-list { display: grid; grid-template-columns: 1fr; gap: 0.65rem 1.5rem; }
+@media (min-width: 640px) { .check-list { grid-template-columns: 1fr 1fr; } }
+.check-list li { position: relative; padding-inline-start: 18px; font-size: 0.875rem; color: var(--c-ink); }
+.check-list li::before {
+  content: ''; position: absolute; inset-inline-start: 0; top: 0.55em;
+  width: 6px; height: 6px; border-radius: 1px; background: var(--c-primary);
+}
+.check-list .lucide { display: none; }
+
+/* ---------- Buyer / industry cells (reference: borderless, round thumb) ---------- */
+.icon-cell {
+  display: flex; align-items: flex-start; gap: 0.9rem;
+  background: transparent; border: 0;
+  padding: 0.5rem 0;
+}
+.icon-cell .cell-ico {
+  display: flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; border-radius: 9999px; color: #fff; flex-shrink: 0;
+}
+.icon-cell .cell-ico .lucide { width: 19px; height: 19px; }
 
 /* ---------- Reduced motion: kill all non-essential animation ---------- */
 @media (prefers-reduced-motion: reduce) {
