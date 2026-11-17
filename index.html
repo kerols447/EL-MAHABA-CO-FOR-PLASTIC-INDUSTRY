@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem('mp-lang') === 'ar' ? 'ar' : 'en';
+        document.documentElement.lang = l;
+        document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+      } catch (e) {}
+    })();
+  </script>
 
   <!-- ================= SEO (Arabic primary / English secondary) =================
        [PLACEHOLDER] Replace https://www.almahabba-plast.com with the real domain
@@ -35,7 +44,7 @@
     "url": "https://www.almahabba-plast.com/",
     "logo": "https://www.almahabba-plast.com/assets/img/logo-ar.png",
     "description": "تصنيع الماستر باتش بجميع أنواعه واستيراد وتجارة جميع خامات البلاستيك في مصر.",
-    "email": "Nourhamam2014@yahoo.com",
+    "email": "kerolssameeh53@gmail.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "العاشر من رمضان",
@@ -52,10 +61,11 @@
   <!-- Fonts: IBM Plex Sans Arabic + Alexandria (AR) / Inter (EN) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Alexandria:wght@500;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Alexandria:wght@500;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Tailwind CDN + brand config -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
   <script src="assets/js/tailwind.config.js"></script>
 
   <!-- Shared component styles -->
@@ -214,25 +224,24 @@
       </div>
     </section>
 
-    <!-- 6) QUALITY — full-bleed photo + checklist + trust pills (reference) -->
-    <section class="quality-split bg-cream">
-      <div class="quality-media reveal">
-        <img src="assets/img/certificate-appreciation.jpg" alt="شهادة تقدير مجموعة المحبة للصناعات البلاستيكية" data-i18n-alt="home.quality.imgAlt" loading="lazy" decoding="async" width="1080" height="1350">
-      </div>
-      <div class="quality-copy px-4 sm:px-6 lg:px-12 py-14 lg:py-16 reveal" data-reveal-delay="120">
-        <div class="max-w-xl mx-auto lg:mx-0 w-full">
+    <!-- 6) QUALITY — centered commitments band -->
+    <section class="section-pad bg-cream">
+      <div class="max-w-content mx-auto px-4 sm:px-6">
+        <div class="max-w-2xl mx-auto text-center mb-12 reveal">
           <span class="eyebrow" data-i18n="home.why.kicker"></span>
           <h2 class="sec-title font-bold text-primary-700 mb-4 leading-snug" data-i18n="home.why.title"></h2>
-          <p class="text-muted leading-relaxed mb-7" data-i18n="footer.desc"></p>
-          <ul class="check-list list-none mb-8">
-            <li><i data-lucide="check"></i><span data-i18n="why.1"></span></li>
-            <li><i data-lucide="check"></i><span data-i18n="why.2"></span></li>
-            <li><i data-lucide="check"></i><span data-i18n="why.3"></span></li>
-            <li><i data-lucide="check"></i><span data-i18n="why.4"></span></li>
-            <li><i data-lucide="check"></i><span data-i18n="why.5"></span></li>
-            <li><i data-lucide="check"></i><span data-i18n="why.6"></span></li>
-          </ul>
-          <div class="flex flex-wrap gap-x-2 gap-y-1 mb-8 text-xs text-muted leading-relaxed">
+          <p class="text-muted leading-relaxed" data-i18n="footer.desc"></p>
+        </div>
+        <ul class="check-list list-none grid sm:grid-cols-2 gap-x-12 gap-y-4 max-w-3xl mx-auto mb-10 reveal" data-reveal-delay="100">
+          <li><i data-lucide="check"></i><span data-i18n="why.1"></span></li>
+          <li><i data-lucide="check"></i><span data-i18n="why.2"></span></li>
+          <li><i data-lucide="check"></i><span data-i18n="why.3"></span></li>
+          <li><i data-lucide="check"></i><span data-i18n="why.4"></span></li>
+          <li><i data-lucide="check"></i><span data-i18n="why.5"></span></li>
+          <li><i data-lucide="check"></i><span data-i18n="why.6"></span></li>
+        </ul>
+        <div class="text-center reveal" data-reveal-delay="160">
+          <div class="flex flex-wrap justify-center gap-x-2 gap-y-1 mb-6 text-xs text-muted leading-relaxed">
             <span class="font-extrabold text-primary-700" data-i18n="home.why.certLead"></span>
             <span data-i18n="footer.pill1"></span><span aria-hidden="true">·</span>
             <span data-i18n="footer.pill2"></span><span aria-hidden="true">·</span>
@@ -343,7 +352,7 @@
   <!-- Floating WhatsApp + back-to-top (rendered by main.js) -->
   <div id="floating-mount"></div>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
   <script src="assets/js/translations.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

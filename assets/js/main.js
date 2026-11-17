@@ -17,14 +17,14 @@
    ============================================================ */
 
 /* WhatsApp number used by the floating button and all WA links */
-const WHATSAPP_NUMBER = '201274889660';
+const WHATSAPP_NUMBER = '201280368119';
 
 /* [PLACEHOLDER] Create a free form at https://formspree.io and
    replace YOUR_FORM_ID with your real form ID. Submissions are
-   delivered to Nourhamam2014@yahoo.com (set inside Formspree). */
+   delivered to kerolssameeh53@gmail.com (set inside Formspree). */
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
 
-const CONTACT_EMAIL = 'Nourhamam2014@yahoo.com';
+const CONTACT_EMAIL = 'kerolssameeh53@gmail.com';
 const PHONE_1 = '+20554413455';   // TEL  displayed: +20 55 441 3455
 const PHONE_2 = '+20554413455';   // FAX  displayed: +20 55 441 3455
 const PHONE_1_DISPLAY = '+20 55 441 3455';
@@ -35,7 +35,8 @@ const PHONE_2_DISPLAY = '+20 55 441 3455';
    ============================================================ */
 
 const LANG_KEY = 'mp-lang';
-let currentLang = localStorage.getItem(LANG_KEY) === 'en' ? 'en' : 'ar';
+/* English is the default for first-time visitors; a saved choice wins. */
+let currentLang = localStorage.getItem(LANG_KEY) === 'ar' ? 'ar' : 'en';
 
 /** Translate a key using the active language (falls back to AR). */
 function t(key) {
@@ -105,6 +106,31 @@ function refreshIcons() {
   }
 }
 
+/* CDN resilience: if Tailwind or Lucide failed to load (offline blip,
+   blocked host), retry once from a mirror and apply the stashed config. */
+function ensureLibs() {
+  if (!window.tailwind) {
+    var tw = document.createElement('script');
+    tw.src = 'https://cdn.tailwindcss.com/3.4.16';
+    tw.onload = function () {
+      if (window.tailwind && window.MP_TW_CONFIG) window.tailwind.config = window.MP_TW_CONFIG;
+    };
+    document.head.appendChild(tw);
+  }
+  if (!window.lucide) {
+    var load = function (src, next) {
+      var s = document.createElement('script');
+      s.src = src;
+      s.onload = refreshIcons;
+      s.onerror = next || null;
+      document.head.appendChild(s);
+    };
+    load('https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js', function () {
+      load('https://cdn.jsdelivr.net/npm/lucide@0.462.0/dist/umd/lucide.min.js');
+    });
+  }
+}
+
 /* ============================================================
    3) SHARED CHROME — header, footer, floating buttons
    ============================================================ */
@@ -169,7 +195,7 @@ function headerHTML() {
               '<span>' + t('misc.langSwitch') + '</span>' +
             '</button>' +
             '<a href="contact.html#quote-form" class="btn btn-accent btn-sm hidden sm:inline-flex">' + t('cta.quote') + '</a>' +
-            '<button id="menu-toggle" type="button" class="lg:hidden p-2 rounded-lg text-primary-700 hover:bg-sage-light transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="' + t('a11y.menu') + '">' +
+            '<button id="menu-toggle" type="button" class="lg:hidden p-2.5 rounded-lg text-primary-700 hover:bg-sage-light transition-colors" aria-expanded="false" aria-controls="mobile-menu" aria-label="' + t('a11y.menu') + '">' +
               '<i data-lucide="menu" class="w-6 h-6 menu-icon-open"></i>' +
               '<i data-lucide="x" class="w-6 h-6 menu-icon-close hidden"></i>' +
             '</button>' +
@@ -258,7 +284,7 @@ function footerHTML() {
       /* Bottom bar */
       '<div class="border-t border-primary-100">' +
         '<div class="max-w-content mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-muted">' +
-          '<p>© <span data-year>' + year + '</span> ' + t('brand.name') + ' — ' + t('footer.rights') + '</p>' +
+          '<p>© <span data-year>' + year + '</span> ' + t('brand.nameEn') + ' — ' + t('footer.rights') + '</p>' +
           '<div class="flex items-center gap-5">' +
             '<a href="privacy.html" class="hover:text-primary transition-colors">' + t('footer.privacy') + '</a>' +
             '<a href="terms.html" class="hover:text-primary transition-colors">' + t('footer.terms') + '</a>' +
@@ -963,6 +989,7 @@ function initProductDetail() {
 document.addEventListener('DOMContentLoaded', function () {
   /* apply saved language before first paint of dynamic content */
   setLang(currentLang);
+  ensureLibs();
   initReveal();
   initCounters();
   initAccordions();

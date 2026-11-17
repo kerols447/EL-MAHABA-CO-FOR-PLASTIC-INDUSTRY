@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        var l = localStorage.getItem('mp-lang') === 'ar' ? 'ar' : 'en';
+        document.documentElement.lang = l;
+        document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+      } catch (e) {}
+    })();
+  </script>
 
   <!-- ================= SEO =================
        [PLACEHOLDER] Replace the domain before deployment (Stage 5). -->
@@ -23,8 +32,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Alexandria:wght@500;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Alexandria:wght@500;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://cdn.tailwindcss.com">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
   <script src="assets/js/tailwind.config.js"></script>
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
@@ -53,7 +63,7 @@
 
     <!-- ============================================================
          QUOTE FORM + CONTACT CARDS
-         Submissions go to Formspree → Nourhamam2014@yahoo.com
+         Submissions go to Formspree → kerolssameeh53@gmail.com
          ============================================================ -->
     <section id="quote-form" class="section-pad bg-cream">
       <div class="max-w-content mx-auto px-4 sm:px-6 grid lg:grid-cols-5 gap-10 items-start">
@@ -156,16 +166,16 @@
             <span class="w-12 h-12 rounded-2xl bg-green-500 text-white flex items-center justify-center shrink-0"><i data-lucide="message-circle" class="w-5 h-5"></i></span>
             <span>
               <span class="block text-xs font-bold text-muted" data-i18n="contact.whatsappLabel"></span>
-              <span class="block font-extrabold text-navy ltr-inline" dir="ltr">+20 127 488 9660</span>
+              <span class="block font-extrabold text-navy ltr-inline" dir="ltr">+20 128 036 8119</span>
             </span>
           </a>
 
           <!-- Email -->
-          <a href="mailto:Nourhamam2014@yahoo.com" class="card card-hover p-5 flex items-center gap-4 block">
+          <a href="mailto:kerolssameeh53@gmail.com" class="card card-hover p-5 flex items-center gap-4 block">
             <span class="w-12 h-12 rounded-2xl bg-accent-50 text-accent flex items-center justify-center shrink-0"><i data-lucide="mail" class="w-5 h-5"></i></span>
             <span class="min-w-0">
               <span class="block text-xs font-bold text-muted" data-i18n="contact.emailLabel"></span>
-              <span class="block font-extrabold text-navy ltr-inline break-all" dir="ltr">Nourhamam2014@yahoo.com</span>
+              <span class="block font-extrabold text-navy ltr-inline break-all" dir="ltr">kerolssameeh53@gmail.com</span>
             </span>
           </a>
 
@@ -239,7 +249,7 @@
   <div id="site-footer-mount"></div>
   <div id="floating-mount"></div>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@0.462.0/dist/umd/lucide.min.js"></script>
   <script src="assets/js/translations.js"></script>
   <script src="assets/js/main.js"></script>
 </body>

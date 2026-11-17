@@ -1,12 +1,14 @@
 /* ============================================================
    المحبة بلاست — Tailwind CDN configuration
    Loaded AFTER the Tailwind CDN script on every page:
-   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.tailwindcss.com/3.4.16"></script>
    <script src="assets/js/tailwind.config.js"></script>
+   If the CDN script failed or is still loading, the config is stashed
+   and main.js applies it once Tailwind arrives.
    Design language: the site's original brand — soft gray paper +
    deep industrial blue + vivid orange CTAs, on the reference layout.
    ============================================================ */
-tailwind.config = {
+window.MP_TW_CONFIG = {
   theme: {
     extend: {
       colors: {
@@ -51,3 +53,4 @@ tailwind.config = {
     }
   }
 };
+if (window.tailwind) window.tailwind.config = window.MP_TW_CONFIG;

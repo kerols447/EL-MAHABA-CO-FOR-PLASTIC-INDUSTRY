@@ -159,7 +159,6 @@ window.I18N = {
     'home.why.kicker': 'لماذا نحن',
     'home.why.title': 'شريك يصنع لصالح مصانعكم',
     'home.why.certLead': 'التزامنا:',
-    'home.quality.imgAlt': 'شهادة تقدير مجموعة المحبة للصناعات البلاستيكية',
     'why.1': 'معايير مخصصة لاستيراد الخامات الخام',
     'why.1.d': 'معايير جودة محددة مسبقاً لكل شحنة نستوردها.',
     'why.2': 'منتجات عالية الجودة بتكلفة منخفضة',
@@ -316,9 +315,6 @@ window.I18N = {
     'quality.c4.d': 'مطابقة دقيقة لعينتكم ثم إنتاج وتسليم في الموعد المتفق عليه.',
     'quality.c5': 'شراكة مستدامة مع العملاء',
     'quality.c5.d': 'نجاحنا مرتبط بنتائج عملائنا في السوق.',
-    'quality.cert.title': 'تقدير من صناعة الجلود المصرية',
-    'quality.cert.desc': 'شهادة تقدير من غرفة صناعة الجلود باتحاد الصناعات المصرية لمشاركة المحبة جروب بجناح مميز في معرض القاهرة الدولي لصناعة الأحذية والجلود (MBM).',
-    'quality.cert.alt': 'شهادة تقدير من غرفة صناعة الجلود باتحاد الصناعات المصرية',
     'quality.img.alt': 'خط إنتاج الماستر باتش وتحويل الحبيبات — صورة توضيحية',
 
     /* ==================== CONTACT — contact.html ==================== */
@@ -345,7 +341,7 @@ window.I18N = {
     'privacy.subtitle': 'كيف نجمع بياناتك ونستخدمها ونحميها عند تواصلك مع المحبة بلاست.',
     'privacy.intro': 'تحترم المحبة بلاست خصوصيتك. توضّح هذه السياسة أنواع البيانات التي نجمعها عبر هذا الموقع وقنوات التواصل، وكيف نستخدمها وكيف يمكنك التحكم فيها.',
     'privacy.s1': 'من نحن',
-    'privacy.s1.d': 'المحبة بلاست (لصناعات البلاستيك) — مصنع ماستر باتش ومورّد خامات بلاستيك، مقرها العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر. لأي استفسار خاص بالخصوصية راسلنا على: Nourhamam2014@yahoo.com',
+    'privacy.s1.d': 'المحبة بلاست (لصناعات البلاستيك) — مصنع ماستر باتش ومورّد خامات بلاستيك، مقرها العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر. لأي استفسار خاص بالخصوصية راسلنا على: kerolssameeh53@gmail.com',
     'privacy.s2': 'المعلومات التي نجمعها',
     'privacy.s2.d': 'نجمع ما ترسله إلينا عمدًا فقط: بيانات نموذج طلب عرض السعر (الاسم، الشركة، رقم الهاتف/الواتساب، البريد الإلكتروني، تفاصيل المنتج واللون والخامة والكمية ومكان التسليم والملاحظات، وأي صورة عينة ترفقها اختياريًا)، وكذلك الرسائل التي ترسلها عبر الهاتف أو واتساب أو البريد الإلكتروني.',
     'privacy.s3': 'كيف نستخدم معلوماتك',
@@ -388,7 +384,7 @@ window.I18N = {
     'terms.s8': 'تعديل الشروط',
     'terms.s8.d': 'يحق لنا تحديث هذه الشروط في أي وقت لمواكبة تغييرات في أنشطتنا أو متطلبات قانونية. يسري التعديل من تاريخ نشره على هذه الصفحة، ويُعد استمرارك في استخدام الموقع قبولًا للنسخة المحدَّثة.',
     'terms.s9': 'تواصل معنا',
-    'terms.s9.d': 'لأي استفسار حول هذه الشروط: المحبة بلاست — العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر — البريد: Nourhamam2014@yahoo.com — هاتف: +20 55 441 3455 — فاكس: +20 55 441 3455',
+    'terms.s9.d': 'لأي استفسار حول هذه الشروط: المحبة بلاست — العاشر من رمضان، المنطقة الصناعية A1، بلوك XIO، مصر — البريد: kerolssameeh53@gmail.com — هاتف: +20 55 441 3455 — فاكس: +20 55 441 3455',
 
     /* --- 404 extra --- */
     '404.hint': 'تأكد من صحة الرابط، أو تابع من أحد الأزرار التالية.'
@@ -545,7 +541,6 @@ window.I18N = {
     'home.why.kicker': 'Why Us',
     'home.why.title': 'A partner that works for your factory',
     'home.why.certLead': 'Our commitment:',
-    'home.quality.imgAlt': 'Certificate of appreciation — Al Mahaba plastic industries group',
     'why.1': 'Dedicated standards for raw material import',
     'why.1.d': 'Pre-defined quality standards for every shipment we import.',
     'why.2': 'High quality at low cost',
@@ -702,9 +697,6 @@ window.I18N = {
     'quality.c4.d': 'Precise matching to your sample, then production and delivery on the agreed date.',
     'quality.c5': 'Sustainable partnership with clients',
     'quality.c5.d': 'Our success is tied to our clients’ results in the market.',
-    'quality.cert.title': 'Appreciation from the Egyptian Leather Industry',
-    'quality.cert.desc': 'A certificate of appreciation from the Leather Industries Chamber (Egyptian Industries Federation) for Al Mahaba Group’s distinguished pavilion at the Cairo International Footwear & Leather Exhibition (MBM).',
-    'quality.cert.alt': 'Certificate of appreciation from the Leather Industries Chamber of the Egyptian Industries Federation',
     'quality.img.alt': 'Masterbatch production line and pellet converting — illustrative image',
 
     /* ==================== CONTACT — contact.html ==================== */
@@ -731,7 +723,7 @@ window.I18N = {
     'privacy.subtitle': 'How we collect, use and protect your data when you contact Al Mahaba.',
     'privacy.intro': 'Al Mahaba respects your privacy. This policy explains what data we collect through this website and our contact channels, how we use it, and the control you have over it.',
     'privacy.s1': 'Who we are',
-    'privacy.s1.d': 'Al Mahaba for Plastic Industries — a masterbatch manufacturer and plastic raw material supplier based in 10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt. For any privacy inquiry, email us at: Nourhamam2014@yahoo.com',
+    'privacy.s1.d': 'Al Mahaba for Plastic Industries — a masterbatch manufacturer and plastic raw material supplier based in 10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt. For any privacy inquiry, email us at: kerolssameeh53@gmail.com',
     'privacy.s2': 'Information we collect',
     'privacy.s2.d': 'We only collect what you deliberately send us: data from the quote request form (name, company, phone/WhatsApp, email, product, color, material, quantity, delivery location, notes, and any optional sample image you attach), plus messages you send by phone, WhatsApp or email.',
     'privacy.s3': 'How we use your information',
@@ -774,7 +766,7 @@ window.I18N = {
     'terms.s8': 'Changes to these terms',
     'terms.s8.d': 'We may update these terms to reflect changes in our activities or legal requirements. Changes take effect when posted on this page, and continued use of the site constitutes acceptance of the updated version.',
     'terms.s9': 'Contact us',
-    'terms.s9.d': 'For any question about these terms: EL MAHABA CO FOR PLASTIC INDUSTRY — 10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt — Email: Nourhamam2014@yahoo.com — Tel: +20 55 441 3455 — Fax: +20 55 441 3455',
+    'terms.s9.d': 'For any question about these terms: EL MAHABA CO FOR PLASTIC INDUSTRY — 10th of Ramadan City, Industrial Zone A1, Block XIO, Egypt — Email: kerolssameeh53@gmail.com — Tel: +20 55 441 3455 — Fax: +20 55 441 3455',
 
     /* --- 404 extra --- */
     '404.hint': 'Check that the link is correct, or continue from one of the buttons below.'
